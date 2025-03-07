@@ -1,0 +1,22 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container-fluid {
+    height: 100vh;
+}
+
+.row {
+    background: #e0e0e0;
+    border-radius: 15px;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.bg-secondary {
+    background: #d6d6d6 !important;
+}
