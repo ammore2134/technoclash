@@ -1,0 +1,213 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffe6e6;
+}
+
+/* Admin Navbar */
+.admin-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #ffb3b3;
+    color: #333;
+}
+
+.admin-navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.admin-navbar .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.admin-navbar .nav-links a:hover {
+    color: #ff4d4d;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #ff9999;
+    padding: 20px;
+    height: 100vh;
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #ff4d4d;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.main-content h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+.quiz-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.quiz-table th, .quiz-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.quiz-table th {
+    background: #ff6666;
+    color: white;
+}
+
+.quiz-table tr:hover {
+    background: #ffe6e6;
+}
+
+/* Action Buttons */
+.action-btn {
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.edit-btn {
+    background: #4CAF50;
+    color: white;
+}
+
+.delete-btn {
+    background: #f44336;
+    color: white;
+}
+
+.add-btn {
+    background: #ff4d4d;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.add-btn:hover {
+    background: #e60000;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .admin-navbar {
+        flex-direction: column;
+    }
+    .admin-navbar .nav-links {
+        margin-top: 10px;
+    }
+}
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
